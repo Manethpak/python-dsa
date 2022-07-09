@@ -1,4 +1,9 @@
 def max_sub_array_of_size_k(k, arr) -> int:
+    """
+    find the maximum sum of any contiguous subarray of size 'k'.
+    Time  O(n)
+    Space O(1)
+    """
     max_sum = 0
     window_sum = 0
     window_start = 0
