@@ -6,7 +6,7 @@ def permutations(letters: str) -> List[str]:
     def dfs(path, used, res):
         # if we have used all letters, add the path to the result
         if len(path) == len(letters):
-            res.append(path[:])
+            res.append("".join(path[:]))
             return
 
         for i, letter in enumerate(letters):
@@ -32,6 +32,3 @@ def permutations(letters: str) -> List[str]:
         )
 
     return res
-
-
-print(permutations('abc'))
